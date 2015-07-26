@@ -12,7 +12,7 @@ Range: 1 to 30
 
 Other variable names have been derived from **features.txt**  
 To make them 'R-frindly', following **transformation** was required.  
-        "fBodyGyro-mean()-Z" --> "fBodyGyro.mean...X"  
+>"fBodyGyro-mean()-Z" --> "fBodyGyro.mean...X"  
 Value of these variables is the average of all observations for 'activity+subject'.  
 Note that original data contained many observations sampled in fixed-width sliding windows of 2.56 sec.  
 We have taken mean over all these samples for all 'activity+subject' combinations.
