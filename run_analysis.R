@@ -6,6 +6,8 @@
 # Load dplyr, we shall use few functions for manipulating data
 library(dplyr)
 
+print('Please wait... This may take a few seconds...')
+
 # Save path for future reference 
 data_dir_name <- file.path("project", "UCI HAR Dataset")
 train_dir_name <- file.path(data_dir_name, "train")
@@ -33,13 +35,13 @@ test_subjects_tdf <- read.table(file.path(test_dir_name, "subject_test.txt"))  %
 features_tdf <- read.table(file.path(data_dir_name, "features.txt")) %>% tbl_df()
 activity_labels_tdf <- read.table(file.path(data_dir_name, "activity_labels.txt")) %>% tbl_df()
 
-# Step 2: Combine 'train' and 'test' data for each of these 3 different type of data
+# Step 2: Combine 'train' and 'test' data for each of these 3 different types of data
 set_df <- rbind(train_set_tdf, test_set_tdf) %>% tbl_df()
 labels_df <- rbind(train_labels_tdf, test_labels_tdf) %>% tbl_df()
 subject_df <-  rbind(train_subjects_tdf, test_subjects_tdf) %>% tbl_df()
 
 
-# Step 3: Change variable (column) name to a more meaningful format.
+# Step 3: Change variable (column) names to a more meaningful format.
 names(set_df) <- features_tdf$V2 # set_df can use column names mentioned in features.txt
 names(labels_df) <- c("ActivityType") # labels_df is nothing but list of types of Activity
 names(subject_df) <- c("SubjectId") # subject_df, not surprizingly contains ID of subject performing this observation
