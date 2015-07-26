@@ -24,8 +24,8 @@ Steps:
 8. Final data is ready, write it to a file.  
 
 ### Codebook
-A detailed description of each variable and transformations is provided in CodeBook.md
+A detailed description of each variable and transformations is provided in **CodeBook.md**
 
 ### Data set
-Resultant tidy data set is uploaded as 'tidy_data_mean.txt'
+Resultant tidy data set is uploaded as **tidy_data_mean.txt**  
 This is a **data set with the average of each variable for each activity and each subject**
