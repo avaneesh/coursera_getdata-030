@@ -4,6 +4,14 @@ Assignment for Getting and Cleaning Data
 Here I provide a script that works on raw data provided by following portal:  
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
+### How to run
+To run this script, put it in a directory where you download the original data - 'UCI HAR Dataset'  
+Then simply source it -  
+> source(run_analysis.R)  
+
+It may take few seconds to complete the execution. Once completed, in the same directory it will create a new file named - **tidy_data_mean.txt**  
+
+
 ### How script works
 Steps:  
 1. Reading data from source (txt files).  
