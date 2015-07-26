@@ -5,7 +5,7 @@ Here I provide a script that works on raw data provided by following portal:
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
 ### How script works
-Steps:
+Steps:  
 1. Step 1: Reading data from source (txt files).
 2. Step 2: Combine 'train' and 'test' data for each of the 3 different types of data
 3. Step 3: Change variable (column) names to a more meaningful format.
