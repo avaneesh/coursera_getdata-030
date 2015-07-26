@@ -3,6 +3,9 @@
 # http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 # Result is a data set that comprises of average over values provided in original data set.
 
+# This script assumes you have downloaded and extracted the data from above portal.
+# It is assumed that directory named 'project/UCI HAR Dataset' is present in the folder from this script is run.
+
 # Load dplyr, we shall use few functions for manipulating data
 library(dplyr)
 
